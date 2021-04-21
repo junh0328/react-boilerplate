@@ -12,7 +12,7 @@ const HomeChanged = () => {
     dispatch({
       type: LOAD_MOVIES_REQUEST,
     });
-  }, []);
+  }, [dispatch]);
 
   return <section className="container">{isLoading ? <div>로딩중..</div> : <div>로딩 완료!</div>}</section>;
 };
